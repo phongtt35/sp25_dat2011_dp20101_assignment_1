@@ -1,60 +1,54 @@
 # Chương trình con
 # Quản lý danh mục của sản phẩm
-danh_muc = []
+
 def ql_danh_muc():
-    print("1.Thêm danh mục sản phẩm ")
-    print("2.Sửa danh mục sản phẩm ")
-    print("3.Xóa danh mục sản phẩm")
-    print("4.Xem danh mục sản phẩm ")
-    print("0.Thoát.")
+    while True:
+        print("1.Quản lý danh mục")
+        print("0.Thoát")
+        chon = input("Chọn chức năng: ")
+        if chon == '1':
+            ql_danh_muc()
+        elif chon == '0':
+            print("Thoát chương trình quản lý danh mục")
+            break
+        else:
+            print("Không có chức năng đó.")
 
-def lua_chon_menu_danh_muc():
-    lua_chon = input("chọn chức năng: ")
-    return lua_chon
+def ql_danh_muc():
+    while True:
+        print("\n === Quản lý danh mục ===")
+        print("1. Xem danh sách danh mục")
+        print("2. Thêm danh mục")
+        print("3. Sửa danh mục")
+        print("4. Xóa danh mục")
+        print("5. Tìm kiếm danh mục")
+        print("0. Thoát")
 
-def chuc_nang_1():
-    ten_danh_muc = input("Nhập tên danh mục: ")
-    danh_muc.append(ten_danh_muc)
-    print("Đã thêm danh mục sản phẩm thành công.")
+        chon = input("Chọn chức năng: ")
+        if chon == '1':
+            xem_danh_sach_danh_muc()
+        elif chon == '2':
+            them_danh_muc()
+        elif chon == '3':
+            sua_danh_muc()
+        elif chon == '4':
+            xoa_danh_muc()
+        elif chon == '5':
+            tim_kiem_danh_muc()
+        elif chon == '0':
+            print("Thoát chương trình quản lý danh mục")
+            break
+        else:
+            print("Không có chức năng đó.")
 
-def chu_nang_2():
-    ten_danh_muc = input("Nhập tên danh mục cần sửa: ")
-    if ten_danh_muc in danh_muc:
-        ten_moi = input("Nhập tên mới: ")
-        vi_tri = danh_muc.index(ten_danh_muc)
-        danh_muc[vi_tri] = ten_moi
-        print("Đã sửa danh mục sản phẩm thành công.")
-    else:
-        print("Danh mục sản phẩm không tồn tại.")
 
-def chuc_nang_3():
-    ten_danh_muc = input("Nhập tên danh mục cần xóa: ")
-    if ten_danh_muc in danh_muc:
-        danh_muc.remove(ten_danh_muc)
-        print("Đã xóa danh mục sản phẩm thành công.")
-    else:
-        print("Danh mục sản phẩm không tồn tại.")
-
-def chuc_nang_4():
-    print("Danh mục sản phẩm: ")
-    for ten_danh_muc in danh_muc:
-        print(ten_danh_muc)
-
-def chuc_nang_0():
-    print("Thoát chương trình quản lý danh mục sản phẩm.")
-
-while True:
-    ql_danh_muc()
-    lua_chon = lua_chon_menu_danh_muc()
-    if lua_chon == '1':
-        chuc_nang_1()
-    elif lua_chon == '2':
-        chu_nang_2()
-    elif lua_chon == '3':
-        chuc_nang_3()
-    elif lua_chon == '4':
-        chuc_nang_4()
-    elif lua_chon == '0':
-        chuc_nang_0()
-        break
-
+def xem_danh_sach_danh_muc():
+    print("=== Danh sách danh mục ===")
+def them_danh_muc():
+    print("=== Thêm danh mục ===")
+def sua_danh_muc():
+    print("=== Sửa danh mục ===")
+def xoa_danh_muc():
+    print("=== Xóa danh mục ===")
+def tim_kiem_danh_muc():
+    print("=== Tìm kiếm danh mục ===")
