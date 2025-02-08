@@ -1,15 +1,25 @@
 # Chương trình con
 # Quản lý đơn hàng của khách hàng
 
-def ThemDonHang():
-    print('đã chạy vào chức năng 1 !')
-
-def menu():
-    print('1. Thêm đơn hàng')
-    print('2. Sửa đơn hàng')
-    print('3. Xóa đơn hàng')
-    print('4. Thoát đơn hàng')
 
 def ql_don_hang():
     print("Chương trình con")
     print("Quản lý đơn hàng của khách hàng")
+    print('-------------------')
+    while(True):
+        choice = input()
+        print('1. Thêm đơn hàng')
+        print('2. Xem danh sách đơn hàng')
+        print('3. Sửa đơn hàng')
+        print('4. Xóa đơn hàng')
+        print('5. Thoát đơn hàng')
+        if choice == '1':
+            print('đã thêm 1')
+        elif choice == '2':
+            print('đã thêm 2')
+        elif choice == '3':
+            print('đã thêm 3')
+        elif choice == '4':
+            print('đã thêm 4')
+        else:
+            print('thoát')
