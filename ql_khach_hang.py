@@ -1,32 +1,32 @@
 # Chương trình con
 # Quản lý khách hàng của công ty
 
-def them_khach_hang():
+def them_don_hanghang_khach_hang():
     print("Thêm khách hàng. ")
     
-def sua_khach_hang():
+def sua_don_hanghang_khach_hang():
     print("Sửa khách hàng. ")
     
-def xoa_khach_hang():
+def xoa_don_hanghang_khach_hang():
     print("Xóa khách hàng. ")
 
 
 def ql_khach_hang():
     while (True):
-        print("Chương trình quản lý khách hàng")
-        print("1. Thêm khách hàng")
-        print("2. Sửa khách hàng")
-        print("3. Xóa khách hàng")
+        print("Chương trình quản lý đơn hàng khách hàng")
+        print("1. Thêm đơn hàng khách hàng")
+        print("2. Sửa đơn hàng khách hàng")
+        print("3. Xóa đơn hàng khách hàng")
         print("4. Thoát")
         
         chon = int(input("Chọn chức năng: "))
         
         if chon == 1:
-            them_khach_hang()
+            them_don_hang_khach_hang()
         elif chon == 2:
-            sua_khach_hang()
+            sua_don_hang_khach_hang()
         elif chon == 3:
-            xoa_khach_hang()
+            xoa_don_hang_khach_hang()
         elif chon == 4:
             break
         else:
