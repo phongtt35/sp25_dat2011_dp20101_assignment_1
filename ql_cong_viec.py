@@ -25,7 +25,7 @@ def ql_cong_viec():
             xoa_cong_viec()
         elif choice == 4:
             xem_danh_sach_cong_viec()
-        elif choice == 5:
+        elif choice == 0:
             print("Thoát chương trình.")
             break
         else:
