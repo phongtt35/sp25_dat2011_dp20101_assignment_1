@@ -5,11 +5,11 @@ def ql_san_pham():
     print("Chương trình con")
     print("Quản lý sản phẩm của công ty")
     while(True):
-        choice = input()
         print('1. Thêm sản phẩm')
         print('2. Xóa sản phẩm')
         print('3. Sửa sản phẩm')
         print('0. Thoát')
+        choice = input()
         if choice == '1':
             print('Đã thêm sản phẩm')
         elif choice == '2':
@@ -18,6 +18,6 @@ def ql_san_pham():
             print('Đã sửa sản phẩm')
         elif choice == '0':
             break
+            return
         else:
             print('Không có sự lựa chọn, Again!')
-
