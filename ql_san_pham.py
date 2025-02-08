@@ -21,3 +21,4 @@ def ql_san_pham():
             return
         else:
             print('Không có sự lựa chọn, Again!')
+ql_san_pham()
