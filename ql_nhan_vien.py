@@ -1,5 +1,5 @@
 # Chương trình con
-# Quản lý nhân viên của công ty
+# Quản lý nhân viên của công ty...
 def menu():
     while True:
         print('1.Quản lý nhân viên.')
