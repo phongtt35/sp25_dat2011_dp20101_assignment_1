@@ -1,6 +1,9 @@
 # Chương trình con
 # Quản lý đơn hàng của khách hàng
 
+def ThemDonHang():
+    print('đã chạy vào chức năng 1 !')
+
 def menu():
     print('1. Thêm đơn hàng')
     print('2. Sửa đơn hàng')
