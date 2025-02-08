@@ -30,7 +30,7 @@ def sua_hop_dong():
 
 def thoat():
     print('Ban da thoat')
-def main():
+def ql_hop_dong():
     while True:
         ql_hop_dong()
         lua_chon = input('Mời chọn chức năng: ')
@@ -49,5 +49,5 @@ def main():
                 print('Ban đã thoát chương trình')
         else:
             print('Lua chon khong hợp le vui lòng nhap lại, nhap (0) để thoát: ')
-main()
+
 
