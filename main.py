@@ -7,7 +7,7 @@ def menu():
     print("Chương trình Quản lý doanh nghiệp VIP PRO")
     print("\t1. Quản lý chấm công của nhân viên")
     print("\t2. Quản lý nhân viên của công ty")
-    print("\t3. Quản lý công việc của từng nhân viên")
+    print("\t3. Quản lý việc của từng nhân viên")
     print("\t4. Quản lý hợp đồng của từng nhân viên")
     print("\t5. Quản lý khách hàng của công ty")
     print("\t6. Quản lý đơn hàng của khách hàng")

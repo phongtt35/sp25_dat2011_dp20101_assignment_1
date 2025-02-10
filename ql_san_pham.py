@@ -18,7 +18,7 @@ def ql_san_pham():
             print('Đã sửa sản phẩm')
         elif choice == '0':
             break
-            return
         else:
             print('Không có sự lựa chọn, Again!')
-ql_san_pham()
+
+    
