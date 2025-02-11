@@ -1,57 +1,75 @@
 # Chương trình con
-# Quản lý khách hàng của công ty
+# Quản lý đơn hàng của khách hàng
 
 
-def menu():
-    while True:
-        print('1.Quản lý khách hàng.')
-        print('2. Thoát')
-        choice = input('Chọn chức năng: ')
-        if choice == '1':
-            ql_khach_hang()
-        elif choice == '2':
-            print('Thoát chương trình')
-            break
-        else:
-            print('Lựa chọn không hợp lệ')
+
 
 def ql_khach_hang():
-    while True:
-        print('\n--- Quản lý Khách Hàng ---')
-        print('1. Danh sách khách hàng')
-        print('2. Thêm khách hàng')
-        print('3. Xóa khách hàng')
-        print('4. Cập nhật thông tin khách hàng')
-        print('5. Tìm kiếm khách hàng')
-        print('6. Quay lại menu chính')
-        
-        choice = input('Chọn chức năng: ')
-        if choice == "1":
-            danh_sach()
-        elif choice == "2":
-            them_kh()
-        elif choice == "3":
-            xoa_kh()
-        elif choice == "4":
-            cap_nhat()
-        elif choice == "5":
-            tim()
-        elif choice == "6":
-            break
-        else:
-            print("Lựa chọn không hợp lệ, vui lòng nhập lại.")
-            
-def danh_sach():
-    print('Danh sách khách hàng')
-def them_kh():
-    print('Thêm khách hàng')
-def xoa_kh():
-    print('Xóa khách hàng')
-def cap_nhat():
-    print('Cập nhật thông tin khách hàng')
-def tim():
-    print('Tìm khách hàng')
+    print("Chương trình con")
+    print("Quản lý đơn hàng của khách hàng")
+    print("")
+    
+    ql_khach_hang = {}
 
-menu()
+    def them_khach_hang():
+        ma = input('Mã khách hàng: ')
+        if ma in ql_khach_hang:
+            print('Mã khách hàng đã tồn tại.')
+        else:
+            ten = input('Tên khách hàng: ')
+            ql_khach_hang[ma] = ten
+            print('Đã thêm khách hàng.')
+
+    def xem_danh_sach_khach_hang():
+        if ql_khach_hang:
+            print('\nDanh sách khách hàng:')
+            for ma, ten in ql_khach_hang.items():
+                print(f'{ma}: {ten}')
+        else:
+            print('Không có khách hàng.')
+
+    def sua_thong_tin_khach_hang():
+        ma = input('Mã khách hàng cần sửa: ')
+        if ma in ql_khach_hang:
+            ql_khach_hang[ma] = input('Tên mới: ')
+            print('Cập nhật thành công.')
+        else:
+            print('Không tìm thấy khách hàng này.')
+
+    def xoa_khach_hang():
+        ma = input('Mã khách hàng cần xóa: ')
+        if ma in ql_khach_hang:
+            del ql_khach_hang[ma]
+            print('Xóa thành công.')
+        else:
+            print('Không tìm thấy khách hàng này.')
+
+    def main():
+        while True:
+            print('\n1. Thêm khách hàng')
+            print('2. Xem danh sách khách hàng')
+            print('3. Sửa thông tin khách hàng')
+            print('4. Xóa khách hàng')
+            print('5. Thoát')
+
+            try:
+                choice = int(input('Chọn: '))
+                if choice == 1:
+                    them_khach_hang()
+                elif choice == 2:
+                    xem_danh_sach_khach_hang()
+                elif choice == 3:
+                    sua_thong_tin_khach_hang()
+                elif choice == 4:
+                    xoa_khach_hang()
+                elif choice == 5:
+                    print('Thoát chương trình.')
+                    break
+                else:
+                    print('Lựa chọn không hợp lệ, vui lòng nhập lại.')
+            except ValueError:
+                print('Vui lòng nhập một số hợp lệ.')
+
+    main()
 
 
