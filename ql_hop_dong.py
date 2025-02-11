@@ -46,6 +46,7 @@ def ql_hop_dong():
         elif lua_chon == "0":
             if xac_nhan():
                 print('Ban đã thoát chương trình')
+                break
         else:
             print('Lua chon khong hợp le vui lòng nhap lại, nhap (0) để thoát: ')
 
