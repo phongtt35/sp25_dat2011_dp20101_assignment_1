@@ -13,7 +13,6 @@ def xac_nhan():
 def ql_hop_dong():
     print("Chương trình con")
     print("Quản lý hợp đồng của từng nhân viên")
-    print("")
     print("1. Thêm hợp đồng")
     print("2. Xóa hợp đồng")
     print("3. Sửa hợp đồng")
