@@ -40,5 +40,3 @@ def main():
         else:
             print("Chức năng không tồn tại")
         print('\n')
-
-main()
